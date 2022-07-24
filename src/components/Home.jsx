@@ -14,9 +14,9 @@ function Home() {
           I'm Full Stack Developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-600px">
-          I am a dynamic and creative Python developer with experience in
-          computer vision and machine learning, as well as a graphic designer
-          with over a year of product development experience at MAS Holdings.
+          Dynamic and creative Python developer with experience in computer
+          vision and machine learning, as well as a graphic designer with over a
+          year of product development experience at MAS Holdings.
         </p>
         <div>
           <button className="text-white group rounded-lg  border-2 px-3 py-3 my-2 flex items-center hover:bg-pink-700 hover:border-pink-700">

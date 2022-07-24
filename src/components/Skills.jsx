@@ -23,7 +23,7 @@ function Skills() {
 
   const cardrender = (card) => {
     return (
-      <div className="shadow-lg rounded-lg shadow-[#13214b] hover:scale-110 duration-150">
+      <div className="shadow-2xl rounded-lg shadow-[#171b26] hover:scale-125 duration-150">
         <img className="w-20 mx-auto " src={card.image} alt="icon" />
         <p>{card.title}</p>
       </div>
@@ -45,7 +45,7 @@ function Skills() {
             </p>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8">
           {cardinfor.map(cardrender)}
         </div>
       </div>
