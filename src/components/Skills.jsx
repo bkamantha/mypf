@@ -10,6 +10,26 @@ import AWS from "../assets/aws.png";
 import Github from "../assets/github.png";
 
 function Skills() {
+  const cardinfor = [
+    { image: HTML, title: "HTML" },
+    { image: CSS, title: "CSS" },
+    { image: JavaScript, title: "JavaScript" },
+    { image: ReactImg, title: "React" },
+    { image: Node, title: "Node" },
+    { image: Firebase, title: "Firebase" },
+    { image: AWS, title: "AWS" },
+    { image: Github, title: "Github" },
+  ];
+
+  const cardrender = (card) => {
+    return (
+      <div className="shadow-lg rounded-lg shadow-[#13214b] hover:scale-110 duration-150">
+        <img className="w-20 mx-auto " src={card.image} alt="icon" />
+        <p>{card.title}</p>
+      </div>
+    );
+  };
+
   return (
     <div name="skills" className="w-full h-screen bg-[#132a4b] text-gray-300">
       <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full">
@@ -26,32 +46,7 @@ function Skills() {
           </div>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-8">
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={HTML} alt="html icon" />
-            <p>HTML</p>
-          </div>
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={CSS} alt="html icon" />
-            <p>CSS</p>
-          </div>
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={JavaScript} alt="html icon" />
-            <p>JavaScript</p>
-          </div>
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={ReactImg} alt="html icon" />
-            <p>React</p>
-          </div>
-
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={Node} alt="html icon" />
-            <p>Node JS</p>
-          </div>
-
-          <div className="shadow-lg shadow-[#13214b] hover:scale-110 duration-150">
-            <img className="w-20 mx-auto " src={Github} alt="html icon" />
-            <p>Github</p>
-          </div>
+          {cardinfor.map(cardrender)}
         </div>
       </div>
     </div>

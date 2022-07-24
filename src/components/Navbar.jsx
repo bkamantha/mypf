@@ -19,7 +19,7 @@ function Navbar() {
         <li>Home</li>
         <li>About</li>
         <li>Skils</li>
-        <li>Works</li>
+        <li>Projects</li>
         <li>Contacts</li>
       </ul>
 
